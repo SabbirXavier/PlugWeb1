@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-surface: var(--color-surface, #fbfbf9);
+  --color-surface-low: var(--color-surface-low, #f4f4f2);
+  --color-surface-card: var(--color-surface-card, #ffffff);
+  --color-primary: var(--color-primary, #090a0b);
+  --color-electric-lime: var(--color-electric-lime, #b8ee00);
+  --color-lime-bright: var(--color-lime-bright, #c7ff3d);
+  --color-lime-dim: var(--color-lime-dim, #a5d600);
+  --color-muted: var(--color-muted, #505256);
+  --color-outline: var(--color-outline, rgba(9, 10, 11, 0.08));
+}
+
+@layer base {
+  :root {
+    --color-surface: #fbfbf9;
+    --color-surface-low: #f4f4f2;
+    --color-surface-card: #ffffff;
+    --color-primary: #090a0b;
+    --color-electric-lime: #b8ee00;
+    --color-lime-bright: #c7ff3d;
+    --color-lime-dim: #a5d600;
+    --color-muted: #505256;
+    --color-outline: rgba(9, 10, 11, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-low);
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8d4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-electric-lime);
+}
+
+/* 3D Perspective Card Tilt & Hover FX */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  will-change: transform;
+}
+
+.glow-lime {
+  box-shadow: 0 0 25px -4px var(--color-electric-lime);
+}
+
+.glow-lime-subtle {
+  box-shadow: 0 0 15px -3px var(--color-electric-lime);
+}
+
+.text-stroke-subtle {
+  -webkit-text-stroke: 1px var(--color-outline);
+  color: transparent;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "PLUG Agency | 3D Digital Web, AI & Creative Studio",
+  "description": "Premium light-theme 3D scroll-animation experience for PLUG agency showcasing Website Development, AI & Automation, and Marketing & Creative.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
