@@ -1,6 +1,5 @@
 import React from 'react';
 import { Users, Bolt, Brain, TrendingUp } from 'lucide-react';
-import { ScopeCalculator } from './ScopeCalculator';
 
 export const Advantage: React.FC = () => {
   return (
@@ -9,10 +8,10 @@ export const Advantage: React.FC = () => {
         {/* Header */}
         <div className="max-w-3xl">
           <span className="font-mono text-xs uppercase tracking-widest text-[#505256] font-semibold block mb-2">
-            03 // The Connected Advantage
+            04. The Connected Advantage
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-5xl text-[#090a0b] tracking-tight mb-4">
-            Why Partner With PLUG?
+            Why Enterprise Brands Partner With PLUG
           </h2>
           <p className="font-body text-base sm:text-lg text-[#505256] leading-relaxed">
             Most agencies sell fragmented pieces: engineers who do not speak brand narrative, and marketers who do not understand algorithmic systems. PLUG integrates all three into an accelerated compounding advantage.
@@ -28,7 +27,7 @@ export const Advantage: React.FC = () => {
                 <Users className="w-6 h-6" />
               </div>
               <span className="font-mono text-[11px] text-[#505256] block mb-1">
-                PILLAR 01 // SYNCHRONICITY
+                01. Synchronicity
               </span>
               <h3 className="font-display font-bold text-xl text-[#090a0b] mb-2">
                 Single Unified Team
@@ -47,7 +46,7 @@ export const Advantage: React.FC = () => {
                 <Bolt className="w-6 h-6 text-[#a5d600]" />
               </div>
               <span className="font-mono text-[11px] text-[#505256] block mb-1">
-                PILLAR 02 // VELOCITY
+                02. Velocity
               </span>
               <h3 className="font-display font-bold text-xl text-[#090a0b] mb-2">
                 Speed to Market
@@ -66,7 +65,7 @@ export const Advantage: React.FC = () => {
                 <Brain className="w-6 h-6 text-[#536d00]" />
               </div>
               <span className="font-mono text-[11px] text-[#505256] block mb-1">
-                PILLAR 03 // INTELLIGENCE
+                03. Intelligence
               </span>
               <h3 className="font-display font-bold text-xl text-[#090a0b] mb-2">
                 Intelligent Automation
@@ -85,10 +84,10 @@ export const Advantage: React.FC = () => {
                 <TrendingUp className="w-6 h-6 text-emerald-600" />
               </div>
               <span className="font-mono text-[11px] text-[#505256] block mb-1">
-                PILLAR 04 // OUTCOMES
+                04. Commercial Rigor
               </span>
               <h3 className="font-display font-bold text-xl text-[#090a0b] mb-2">
-                Commercial Rigor
+                Proven Pipeline ROI
               </h3>
               <p className="font-body text-sm text-[#505256] leading-relaxed">
                 Every layout decision, animation timing, and line of code is anchored to conversion metrics, customer acquisition costs, and bottom-line ROI.
@@ -97,9 +96,6 @@ export const Advantage: React.FC = () => {
             <div className="w-8 h-1 bg-[#b8ee00] mt-6 rounded-full" />
           </div>
         </div>
-
-        {/* Embedded Interactive Scope Estimator */}
-        <ScopeCalculator />
       </div>
     </section>
   );

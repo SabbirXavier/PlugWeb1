@@ -118,7 +118,7 @@ export const TeamCollective: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pb-8 border-b border-[var(--color-outline)]">
           <div className="lg:col-span-5">
             <span className="font-mono text-xs uppercase tracking-widest text-[var(--color-muted)] font-semibold block mb-2">
-              05 // The Collective
+              05. Senior Leadership Collective
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-5xl text-[var(--color-primary)] tracking-tight">
               Senior minds focused on precision craft.

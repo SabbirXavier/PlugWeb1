@@ -3,14 +3,23 @@ import { ArrowRight, CheckCircle2, Mail, MapPin, Phone, MessageCircle } from 'lu
 import { CtaAssembly3DCanvas } from './three/CtaAssembly3DCanvas';
 import { sfx } from '../utils/audio';
 
-export const ContactCTA: React.FC<{ defaultServiceId?: string }> = ({ defaultServiceId = 'web-solutions' }) => {
+export const ContactCTA: React.FC<{ defaultServiceId?: string; defaultDetails?: string }> = ({
+  defaultServiceId = 'web-solutions',
+  defaultDetails = '',
+}) => {
   const [fullName, setFullName] = useState('');
   const [workEmail, setWorkEmail] = useState('');
   const [phoneInput, setPhoneInput] = useState('');
   const [service, setService] = useState(defaultServiceId);
   const [budget, setBudget] = useState('tier2');
-  const [details, setDetails] = useState('');
+  const [details, setDetails] = useState(defaultDetails);
   const [submitted, setSubmitted] = useState(false);
+
+  React.useEffect(() => {
+    if (defaultDetails) {
+      setDetails(defaultDetails);
+    }
+  }, [defaultDetails]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

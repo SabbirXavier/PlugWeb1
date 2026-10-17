@@ -162,7 +162,7 @@ export const ServicesShowcase: React.FC<{ onStartProject: (serviceId: string) =>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-black/[0.08]">
           <div className="max-w-3xl">
             <span className="font-mono text-xs uppercase tracking-widest text-[#505256] font-semibold block mb-3">
-              01 // The Complete Ecosystem
+              01. Core Capabilities Ecosystem
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-5xl text-[#090a0b] tracking-tight mb-3">
               Everything Your Brand Needs to Move Forward

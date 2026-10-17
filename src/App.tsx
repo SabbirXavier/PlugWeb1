@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { BrandStatement } from './components/BrandStatement';
 import { ServicesShowcase } from './components/ServicesShowcase';
 import { PerformanceSpotlight } from './components/PerformanceSpotlight';
+import { ScopeCalculator } from './components/ScopeCalculator';
 import { Portfolio } from './components/Portfolio';
 import { Advantage } from './components/Advantage';
 import { ProcessTimeline } from './components/ProcessTimeline';
@@ -22,6 +23,7 @@ function MainAppContent() {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [inquiryDefaultService, setInquiryDefaultService] = useState('web-solutions');
+  const [lockedScopeSummary, setLockedScopeSummary] = useState('');
 
   const handleStartProject = (serviceId: string) => {
     setInquiryDefaultService(serviceId);
@@ -68,39 +70,47 @@ function MainAppContent() {
           <ServicesShowcase onStartProject={handleStartProject} />
         </ScrollParallaxSection>
 
-        {/* 4. Dedicated Performance Marketing Spotlight (Slide Left) */}
+        {/* 5. Dedicated Performance Marketing Spotlight (Slide Left) */}
         <ScrollParallaxSection animationType="slide-left" speed={0.14}>
           <PerformanceSpotlight />
         </ScrollParallaxSection>
 
-        {/* 5. Selected Work (Perspective 3D) */}
+        {/* 6. Primary Interactive Conversion Feature: Scope & Sprint ROI Calculator */}
+        <ScrollParallaxSection animationType="scale-up" speed={0.1}>
+          <ScopeCalculator onScopeLocked={(summary) => setLockedScopeSummary(summary)} />
+        </ScrollParallaxSection>
+
+        {/* 7. Selected Work with Verified ROI Proof (Perspective 3D) */}
         <ScrollParallaxSection animationType="perspective-3d" speed={0.1}>
           <Portfolio />
         </ScrollParallaxSection>
 
-        {/* 6. Why PLUG / Connected Advantage (Slide Right) */}
+        {/* 8. Why PLUG / Connected Advantage (Slide Right) */}
         <ScrollParallaxSection animationType="slide-right" speed={0.12}>
           <Advantage />
         </ScrollParallaxSection>
 
-        {/* 7. Process (Scale Up) */}
+        {/* 9. Process (Scale Up) */}
         <ScrollParallaxSection animationType="scale-up" speed={0.08}>
           <ProcessTimeline />
         </ScrollParallaxSection>
 
-        {/* 8. About and Team (Slide Left) */}
+        {/* 10. About and Team (Slide Left) */}
         <ScrollParallaxSection animationType="slide-left" speed={0.1}>
           <TeamCollective />
         </ScrollParallaxSection>
 
-        {/* 9. Live Chatbot Sandbox Environment */}
+        {/* 11. Live Chatbot Sandbox Environment */}
         <ScrollParallaxSection animationType="scale-up" speed={0.1}>
           <LiveChatbotSandbox />
         </ScrollParallaxSection>
 
-        {/* 10. Final CTA and Project Inquiry Form (Perspective 3D) */}
+        {/* 12. Final CTA and Project Inquiry Form (Perspective 3D) */}
         <ScrollParallaxSection animationType="perspective-3d" speed={0.14}>
-          <ContactCTA defaultServiceId={inquiryDefaultService} />
+          <ContactCTA
+            defaultServiceId={inquiryDefaultService}
+            defaultDetails={lockedScopeSummary}
+          />
         </ScrollParallaxSection>
       </main>
 

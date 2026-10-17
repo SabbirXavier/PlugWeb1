@@ -14,11 +14,12 @@ const chapters: ScrollytellingChapter[] = [
   { id: 'scrollytelling', num: '02', title: 'THE MANIFESTO', targetId: '#scrollytelling' },
   { id: 'disciplines', num: '03', title: 'PILLARS (6)', targetId: '#disciplines' },
   { id: 'performance', num: '04', title: 'PERFORMANCE', targetId: '#performance-marketing' },
-  { id: 'work', num: '05', title: 'CRAFT WORK', targetId: '#selected-work' },
-  { id: 'advantage', num: '06', title: 'ADVANTAGE', targetId: '#advantage' },
-  { id: 'process', num: '07', title: 'METHODOLOGY', targetId: '#process' },
-  { id: 'team', num: '08', title: 'COLLECTIVE', targetId: '#team' },
-  { id: 'contact', num: '09', title: 'INITIATE', targetId: '#contact-inquiry' },
+  { id: 'scope', num: '05', title: 'SCOPE & ROI', targetId: '#scope-calculator' },
+  { id: 'work', num: '06', title: 'PROOF & WORK', targetId: '#selected-work' },
+  { id: 'advantage', num: '07', title: 'ADVANTAGE', targetId: '#advantage' },
+  { id: 'process', num: '08', title: 'METHODOLOGY', targetId: '#process' },
+  { id: 'team', num: '09', title: 'COLLECTIVE', targetId: '#team' },
+  { id: 'contact', num: '10', title: 'INITIATE', targetId: '#contact-inquiry' },
 ];
 
 export const ScrollytellingHUD: React.FC = () => {

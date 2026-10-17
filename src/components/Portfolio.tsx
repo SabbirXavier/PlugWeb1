@@ -171,10 +171,10 @@ export const Portfolio: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-black/[0.08]">
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-[#505256] font-semibold block mb-2">
-              02 // Commercial Proof
+              03. Verified Commercial Proof
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-5xl text-[#090a0b] tracking-tight">
-              Selected Projects & Concept Builds
+              Enterprise Case Studies & Attributed ROI
             </h2>
           </div>
 

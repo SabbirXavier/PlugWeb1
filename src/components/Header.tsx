@@ -36,34 +36,55 @@ export const Header: React.FC<HeaderProps> = () => {
           className="flex items-center gap-2.5 group focus:outline-none"
         >
           <Hexagon className="w-6 h-6 text-white stroke-[1.5] group-hover:rotate-45 transition-transform duration-500" />
-          <span className="font-sans font-medium text-lg sm:text-xl tracking-tight text-white">
-            novaai
+          <span className="font-display font-bold text-xl tracking-tight text-white uppercase">
+            PLUG
           </span>
         </a>
 
-        {/* Center Nav Links (md+) */}
-        <nav className="hidden md:flex items-center gap-8 lg:gap-10 text-sm text-white/85">
+        {/* Center Nav Links (md+) - Clean 3-Zone Contract */}
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm text-white/85">
+          <a
+            href="#disciplines"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('#disciplines');
+            }}
+            className="hover:text-white transition-colors whitespace-nowrap shrink-0"
+          >
+            Capabilities
+          </a>
+
+          <a
+            href="#performance-marketing"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('#performance-marketing');
+            }}
+            className="hover:text-white transition-colors whitespace-nowrap shrink-0"
+          >
+            Performance
+          </a>
+
+          <a
+            href="#scope-calculator"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('#scope-calculator');
+            }}
+            className="hover:text-[var(--color-electric-lime)] text-[var(--color-electric-lime)] transition-colors whitespace-nowrap shrink-0 font-medium"
+          >
+            Scope & ROI
+          </a>
+
           <a
             href="#selected-work"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick('#selected-work');
             }}
-            className="hover:text-white transition-colors flex items-center gap-1"
+            className="hover:text-white transition-colors whitespace-nowrap shrink-0"
           >
-            <span>Projects</span>
-            <sup className="font-mono text-[10px] text-white/60">6</sup>
-          </a>
-
-          <a
-            href="#advantage"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick('#advantage');
-            }}
-            className="hover:text-white transition-colors"
-          >
-            About
+            Case Studies
           </a>
 
           <a
@@ -72,20 +93,9 @@ export const Header: React.FC<HeaderProps> = () => {
               e.preventDefault();
               handleNavClick('#team');
             }}
-            className="hover:text-white transition-colors"
+            className="hover:text-white transition-colors whitespace-nowrap shrink-0"
           >
-            Blog
-          </a>
-
-          <a
-            href="#contact-inquiry"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick('#contact-inquiry');
-            }}
-            className="hover:text-white transition-colors"
-          >
-            Contact
+            Collective
           </a>
         </nav>
 
@@ -139,19 +149,35 @@ export const Header: React.FC<HeaderProps> = () => {
             </a>
 
             <a
+              href="#disciplines"
+              onClick={() => handleNavClick('#disciplines')}
+              className="text-lg font-medium"
+            >
+              Capabilities (6 Pillars)
+            </a>
+
+            <a
+              href="#performance-marketing"
+              onClick={() => handleNavClick('#performance-marketing')}
+              className="text-lg font-medium"
+            >
+              Performance Ads
+            </a>
+
+            <a
+              href="#scope-calculator"
+              onClick={() => handleNavClick('#scope-calculator')}
+              className="text-lg font-medium text-[var(--color-electric-lime)]"
+            >
+              Scope & ROI Calculator
+            </a>
+
+            <a
               href="#selected-work"
               onClick={() => handleNavClick('#selected-work')}
               className="text-lg font-medium"
             >
-              Projects <sup className="font-mono text-xs text-white/60">6</sup>
-            </a>
-
-            <a
-              href="#advantage"
-              onClick={() => handleNavClick('#advantage')}
-              className="text-lg font-medium"
-            >
-              About
+              Case Studies
             </a>
 
             <a
@@ -159,7 +185,7 @@ export const Header: React.FC<HeaderProps> = () => {
               onClick={() => handleNavClick('#team')}
               className="text-lg font-medium"
             >
-              Blog
+              The Collective
             </a>
 
             <a
@@ -167,7 +193,7 @@ export const Header: React.FC<HeaderProps> = () => {
               onClick={() => handleNavClick('#contact-inquiry')}
               className="text-lg font-medium"
             >
-              Contact
+              Initiate Project
             </a>
           </div>
 

@@ -161,7 +161,7 @@ export const LiveChatbotSandbox: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[var(--color-muted)] font-semibold mb-2">
               <Cpu className="w-4 h-4 text-[var(--color-electric-lime)]" />
-              <span>08 // Interactive AI Sandbox</span>
+              <span>06. Interactive AI Systems Sandbox</span>
             </div>
             <h2 className="font-display font-bold text-3xl sm:text-5xl text-[var(--color-primary)] tracking-tight">
               Live Chatbot Sandbox Environment

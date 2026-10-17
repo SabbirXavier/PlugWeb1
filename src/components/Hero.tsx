@@ -25,47 +25,42 @@ export const Hero: React.FC<HeroProps> = ({ reducedMotion }) => {
 
       {/* Main Content */}
       <div className="max-w-[1440px] w-full mx-auto relative z-10 flex flex-col items-center text-center my-auto pt-4 sm:pt-8">
-        {/* Eyebrow Pill */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/80 border border-black/[0.08] backdrop-blur-md shadow-xs mb-6 hover:border-black/20 transition-all">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#b8ee00] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#b8ee00]" />
-          </span>
-          <span className="font-display text-[11px] font-bold tracking-widest uppercase text-[#090a0b]">
-            Full-Service Digital, Creative & Performance Agency
-          </span>
-          <span className="text-[10px] font-mono text-[#505256] border-l border-black/10 pl-2">
-            v4.2025
-          </span>
+        {/* Clean Editorial Eyebrow (Zero-Pill Discipline) */}
+        <div className="flex items-center gap-2 mb-6 font-mono text-xs uppercase tracking-widest text-[#505256]">
+          <span className="font-bold text-[#090a0b]">PLUG Agency</span>
+          <span aria-hidden="true">·</span>
+          <span>Enterprise Growth Engine</span>
+          <span aria-hidden="true">·</span>
+          <span className="text-[#536d00] font-semibold">Guaranteed 2-Week Sprints</span>
         </div>
 
-        {/* Oversized Headline */}
-        <h1 className="font-display font-bold text-4xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-tight max-w-6xl text-[#090a0b] select-none drop-shadow-2xs">
+        {/* Oversized Headline with Balanced Wrap */}
+        <h1 className="font-display font-bold text-4xl sm:text-6xl md:text-7xl lg:text-[86px] leading-[0.98] tracking-tight max-w-6xl text-[#090a0b] select-none [text-wrap:balance]">
           YOUR CONNECTED DIGITAL, <br className="hidden sm:block" />
           <span className="relative inline-block px-2 my-1 sm:my-2">
             <span className="relative z-10">CREATIVE & GROWTH</span>
             <span className="absolute left-0 bottom-1 sm:bottom-2 w-full h-3 sm:h-5 bg-[#b8ee00]/90 -z-0 rounded-xs" />
           </span>{' '}
-          PARTNER.
+          ENGINE.
         </h1>
 
         {/* Crisp Editorial Subtext */}
-        <p className="font-body text-base sm:text-lg md:text-xl text-[#505256] max-w-3xl mt-6 leading-relaxed font-normal">
-          We help ambitious brands establish their online presence, automate operations, attract customers through performance advertising, manage social media, and scale revenue — unified under one senior partner team.
+        <p className="font-body text-base sm:text-lg md:text-xl text-[#505256] max-w-3xl mt-6 leading-relaxed font-normal [text-wrap:balance]">
+          We engineer high-velocity 3D web platforms, deploy autonomous AI customer workflows, and scale high-ROAS performance ad campaigns — unified under one senior partner team with zero junior handoffs.
         </p>
 
         {/* Dual CTA Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a
-            href="#contact-inquiry"
+            href="#scope-calculator"
             onClick={(e) => {
               e.preventDefault();
-              handleScrollTo('#contact-inquiry');
+              handleScrollTo('#scope-calculator');
             }}
             onMouseEnter={() => sfx.playLimeHover()}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-display text-xs font-bold uppercase tracking-wider bg-[#b8ee00] text-[#090a0b] hover:bg-[#c7ff3d] px-8 py-4 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all glow-lime cursor-pointer"
           >
-            <span>Start a Project</span>
+            <span>Calculate Project Scope & ROI</span>
             <ArrowRight className="w-4 h-4" />
           </a>
 
@@ -77,19 +72,19 @@ export const Hero: React.FC<HeroProps> = ({ reducedMotion }) => {
             }}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-display text-xs font-semibold uppercase tracking-wider bg-white/80 hover:bg-white text-[#090a0b] border border-black/10 px-8 py-4 rounded-xl shadow-xs hover:border-black/20 hover:-translate-y-0.5 transition-all backdrop-blur-md cursor-pointer"
           >
-            <span>Explore 6 Categories</span>
+            <span>Explore 6 Capabilities</span>
             <ArrowDown className="w-4 h-4" />
           </a>
         </div>
 
-        {/* Floating Metrics Bar */}
+        {/* Verified Enterprise Metrics Bar */}
         <div className="w-full max-w-4xl mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 text-left">
           <div className="bg-white/85 backdrop-blur-md border border-black/[0.08] p-3.5 rounded-xl shadow-xs flex items-center gap-3 hover:border-black/20 transition-all">
             <div className="w-2.5 h-2.5 rounded-full bg-[#b8ee00]" />
             <div>
-              <div className="font-display font-bold text-base text-[#090a0b]">6 Core</div>
+              <div className="font-display font-bold text-base text-[#090a0b] tabular-nums">$42M+</div>
               <div className="font-mono text-[10px] text-[#505256] uppercase tracking-wider">
-                Service Pillars
+                Pipeline Generated
               </div>
             </div>
           </div>
@@ -97,9 +92,9 @@ export const Hero: React.FC<HeroProps> = ({ reducedMotion }) => {
           <div className="bg-white/85 backdrop-blur-md border border-black/[0.08] p-3.5 rounded-xl shadow-xs flex items-center gap-3 hover:border-black/20 transition-all">
             <Target className="w-4 h-4 text-[#a5d600]" />
             <div>
-              <div className="font-display font-bold text-base text-[#090a0b]">Google & Meta</div>
+              <div className="font-display font-bold text-base text-[#090a0b] tabular-nums">4.6x Average</div>
               <div className="font-mono text-[10px] text-[#505256] uppercase tracking-wider">
-                Performance Ads
+                Attributed ROAS
               </div>
             </div>
           </div>
@@ -107,9 +102,9 @@ export const Hero: React.FC<HeroProps> = ({ reducedMotion }) => {
           <div className="bg-white/85 backdrop-blur-md border border-black/[0.08] p-3.5 rounded-xl shadow-xs flex items-center gap-3 hover:border-black/20 transition-all">
             <Cpu className="w-4 h-4 text-[#090a0b]" />
             <div>
-              <div className="font-display font-bold text-base text-[#090a0b]">AI Triage</div>
+              <div className="font-display font-bold text-base text-[#090a0b]">100% Senior</div>
               <div className="font-mono text-[10px] text-[#505256] uppercase tracking-wider">
-                Smart Workflows
+                Dedicated Partners
               </div>
             </div>
           </div>
