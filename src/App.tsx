@@ -8,6 +8,7 @@ import { Portfolio } from './components/Portfolio';
 import { Advantage } from './components/Advantage';
 import { ProcessTimeline } from './components/ProcessTimeline';
 import { TeamCollective } from './components/TeamCollective';
+import { LiveChatbotSandbox } from './components/LiveChatbotSandbox';
 import { ContactCTA } from './components/ContactCTA';
 import { Footer } from './components/Footer';
 import { ParallaxBackgroundCanvas } from './components/three/ParallaxBackgroundCanvas';
@@ -92,7 +93,12 @@ function MainAppContent() {
           <TeamCollective />
         </ScrollParallaxSection>
 
-        {/* 9. Final CTA and Project Inquiry Form (Perspective 3D) */}
+        {/* 9. Live Chatbot Sandbox Environment */}
+        <ScrollParallaxSection animationType="scale-up" speed={0.1}>
+          <LiveChatbotSandbox />
+        </ScrollParallaxSection>
+
+        {/* 10. Final CTA and Project Inquiry Form (Perspective 3D) */}
         <ScrollParallaxSection animationType="perspective-3d" speed={0.14}>
           <ContactCTA defaultServiceId={inquiryDefaultService} />
         </ScrollParallaxSection>

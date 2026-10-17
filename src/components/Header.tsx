@@ -183,6 +183,18 @@ export const Header: React.FC<HeaderProps> = ({
           >
             Collective
           </a>
+
+          <a
+            href="#chatbot-sandbox"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('#chatbot-sandbox');
+            }}
+            className="hover:text-[var(--color-electric-lime)] transition-colors text-[var(--color-electric-lime)] font-mono text-xs flex items-center gap-1"
+          >
+            <span>AI Sandbox</span>
+            <span className="w-2 h-2 rounded-full bg-[var(--color-electric-lime)] animate-ping" />
+          </a>
         </nav>
 
         {/* Right Action Group + Small Top Right Palette Icon */}

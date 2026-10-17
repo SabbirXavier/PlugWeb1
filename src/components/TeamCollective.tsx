@@ -55,7 +55,7 @@ const teamMembers: TeamMember[] = [
     bio: 'Builds autonomous multi-agent pipelines, fine-tunes specialized inference models, and optimizes low-latency embeddings.',
     tags: ['LangChain', 'Python', 'Vector DBs', 'Gemini API'],
     imageUrl:
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'mayank',
