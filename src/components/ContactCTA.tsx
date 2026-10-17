@@ -19,7 +19,7 @@ export const ContactCTA: React.FC<{ defaultServiceId?: string }> = ({ defaultSer
   };
 
   return (
-    <section className="w-full py-28 px-6 sm:px-10 relative overflow-hidden" id="contact-inquiry">
+    <section className="w-full py-14 sm:py-20 lg:py-28 px-6 sm:px-10 relative overflow-hidden" id="contact-inquiry">
       {/* Subtle lime ambient glow */}
       <div className="absolute bottom-10 right-1/4 w-[600px] h-[600px] bg-[#b8ee00]/15 rounded-full blur-[140px] pointer-events-none -z-10" />
 

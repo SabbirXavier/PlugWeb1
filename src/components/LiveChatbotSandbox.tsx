@@ -298,7 +298,7 @@ export const LiveChatbotSandbox: React.FC = () => {
           </div>
 
           {/* Interactive Live Chat Terminal (Right Column) */}
-          <div className="lg:col-span-8 flex flex-col h-[600px] rounded-2xl bg-[var(--color-surface-card)] border border-[var(--color-outline)] shadow-xl overflow-hidden">
+          <div className="lg:col-span-8 flex flex-col h-[520px] sm:h-[600px] rounded-2xl bg-[var(--color-surface-card)] border border-[var(--color-outline)] shadow-xl overflow-hidden">
             {/* Terminal Header */}
             <div className="p-4 bg-[var(--color-surface-low)] border-b border-[var(--color-outline)] flex items-center justify-between">
               <div className="flex items-center gap-3">

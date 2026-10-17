@@ -83,7 +83,7 @@ export const PerformanceSpotlight: React.FC = () => {
   const currentTileObj = performanceTiles.find((t) => t.id === activeTile) || performanceTiles[0];
 
   return (
-    <section className="w-full py-28 px-6 sm:px-10 bg-white border-t border-black/[0.08] relative" id="performance-marketing">
+    <section className="w-full py-14 sm:py-20 lg:py-28 px-6 sm:px-10 bg-white border-t border-black/[0.08] relative" id="performance-marketing">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-black/[0.08]">

@@ -89,7 +89,7 @@ export const ProcessTimeline: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number | null>(0);
 
   return (
-    <section className="w-full py-28 px-6 sm:px-10 relative" id="process">
+    <section className="w-full py-14 sm:py-20 lg:py-28 px-6 sm:px-10 relative" id="process">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-16">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-black/[0.08]">

@@ -112,7 +112,7 @@ export const TeamCollective: React.FC = () => {
       : teamMembers.filter((m) => m.category === filter || (filter === 'exec' && m.badge === 'PLUG PARTNER'));
 
   return (
-    <section className="w-full py-28 px-6 sm:px-10 bg-[var(--color-surface-low)]/50 border-t border-[var(--color-outline)]" id="team">
+    <section className="w-full py-14 sm:py-20 lg:py-28 px-6 sm:px-10 bg-[var(--color-surface-low)]/50 border-t border-[var(--color-outline)]" id="team">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-16">
         {/* Header & Stats */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pb-8 border-b border-[var(--color-outline)]">
